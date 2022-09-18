@@ -1,0 +1,133 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Belleza',sans-serif;
+    /* background: linear-gradient(180deg, #043448 0%, #043344c2 100%); */
+    /* background: linear-gradient(180deg, #043448 0%, #164AA2 100%); */
+    /* background: linear-gradient(180deg, #000000 0%, rgba(10, 30, 66, 0.75) 100%); */
+    background: linear-gradient(180deg, #000000 0%, rgb(12 57 78) 100%);
+}
+.main_container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 4px;
+    height: 4px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #4fc3dc44,0 0 3px #4fc3dc,0 0 4px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(80s /var(--i));
+}
+.bubbles span:nth-child(even){
+    background: #9dd4e0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #9dd4e044,0 0 3px #9dd4e0,0 0 4px #9dd4e0;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-10vh) scale();
+    }
+}
+.header{
+    position: relative;
+    background: #8bb1b947;
+    top: 15px;
+    left: 15px;
+    width: 98%;
+    height: 75px;
+    border-radius: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.footer{
+    position: absolute;
+    background: #357c8b21;
+    width: 100%;
+    bottom: 0;
+    height: 252px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.logo_daovotion img{
+    width: 70px;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.logo_daovotion img:hover{
+    transform: scale(1.2);
+}
+.logo_user i{
+    padding-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.logo_user i:hover{
+    transform: scale(1.2);
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.nav-links li:hover{
+    transform: scale(1.1);
+}
+.nav-links a{
+    font-size: 1800;
+    color: wheat;
+    text-decoration: none;
+}
+header nav ul li a{
+    font: normal 20px/normal "Warnes", Helvetica, sans-serif;
+    color: rgba(255,255,255,1);
+    text-decoration: normal;
+    text-align: center;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    white-space: pre;
+    text-shadow: 0 0 10px #ff00de , 0 0 20px #ff00de , 0 0 30px #ff00de , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+footer nav ul li a{
+  font: normal 20px/normal "Warnes", Helvetica, sans-serif;
+  color: rgba(255,255,255,1);
+  text-decoration: normal;
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  white-space: pre;
+  text-shadow: 0 0 10px #08e9d4 , 0 0 20px #08e9d4 , 0 0 30px #08e9d4 , 0 0 40px #08e9d4 , 0 0 70px #08e9d4 , 0 0 80px #08e9d4 , 0 0 100px #08e9d4 ;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
